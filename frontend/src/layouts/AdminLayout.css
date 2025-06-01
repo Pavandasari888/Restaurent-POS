@@ -1,0 +1,23 @@
+.admin-layout {
+display: flex;
+height: 100vh;
+width: 100%;
+}
+
+.main-section {
+margin-left: 60px; /* space for sidebar */
+flex: 1;
+display: flex;
+flex-direction: column;
+}
+
+.main-content {
+flex: 1;
+background: #e4ebf2;
+overflow-y: auto;
+}
+.page-content {
+    padding-left: 60px; /* keeps content inside container without overflow */
+    position: static; /* or remove position */
+    left: 0;
+}

@@ -1,0 +1,35 @@
+.header {
+height: 50px;
+background:none;
+
+display: flex;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.search-input {
+padding: 8px 14px;
+width: 250px;
+position: relative;
+margin-left: 20px;
+border-radius: 30px;
+border: none;
+height: 40px;
+}
+
+.dropdown-icon {
+font-size: 20px;
+cursor: pointer;
+}
+.header-logo {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}

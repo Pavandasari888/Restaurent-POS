@@ -1,0 +1,140 @@
+    .order-summary {
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+    }
+
+    .order-summary h2 {
+    font-size: 24px;
+    margin-bottom: 4px;
+    }
+
+    .order-summary p {
+    font-size: 14px;
+    color: #666;
+    }
+
+    .order-items {
+    margin-top: 20px;
+    }
+
+    .order-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    }
+
+    .order-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    }
+
+    .order-item .details {
+    flex-grow: 1;
+    }
+
+    .order-item .remove {
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+    }
+
+    textarea {
+    width: 100%;
+    margin-top: 12px;
+    padding: 8px;
+    resize: none;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    min-height: 60px;
+    }
+
+    .dine-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    }
+
+    .dine-options button {
+    flex: 1;
+    padding: 12px;
+    margin: 0 4px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+    .dine-options .active {
+    background-color: black;
+    color: white;
+    }
+
+    .price-summary div {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+    }
+    .price-summary{
+        margin: 20px 0;
+    }
+
+    .price-summary .total {
+    font-weight: bold;
+    font-size: 18px;
+    }
+
+    .user-details {
+    margin-top: 20px;
+    }
+
+    .swipe-button {
+    margin-top: 24px;
+    background: #f0f0f0;
+    padding: 12px 24px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    touch-action: pan-y;;
+    transition: background 0.3s ease;
+    height: 85px;
+    }
+
+    .swipe-button .swipe-handle {
+    width: 72px;
+    height: 72px;
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    }
+    .swipe-handle p{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    position: relative;
+    bottom: 5px;
+    }
+    .swipe-button span {
+        font-size: 25px;
+        position: relative;
+        top: 10px;
+    }

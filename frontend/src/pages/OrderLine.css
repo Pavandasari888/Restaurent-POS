@@ -1,0 +1,87 @@
+    .orderline-container {
+    padding: 20px;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    margin-right: 20px;
+    }
+    .orderline-container h2{
+        margin: 10px;
+        margin-top: none;
+    }
+
+    .order-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    }
+
+    .order-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    .order-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+    }
+
+    .order-type {
+    background-color: #eee;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    }
+
+    .order-meta {
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .order-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    }
+
+    .order-footer {
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    .order-status {
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    }
+
+    /* Status colors */
+    .processing .order-status {
+    background-color: #fde68a;
+    color: #b45309;
+    }
+
+    .done .order-status {
+    background-color: #bbf7d0;
+    color: #047857;
+    }
+
+    

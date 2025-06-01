@@ -1,0 +1,64 @@
+    /* Entire sidebar container */
+    .sidebar {
+    width: 40px;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    left: 10px;
+    top: 50px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+    border-radius: 30px;
+    }
+
+    /* Optional logo or icon */
+    .sidebar-logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+
+    /* The nav container that holds the icons */
+    .sidebar-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    background-color: white;
+    height: 90vh;
+    width: 40px;
+    border-radius: 30px;
+    padding: 10px 0;
+    }
+
+    /* NavLink icons (SVGs) */
+    .sidebar-icon {
+    font-size: 22px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #444;
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    /* Adjust SVG size inside the icon */
+    .sidebar-icon svg {
+    width: 24px;
+    height: 24px;
+    }
+
+    /* Hover and active styles */
+    .sidebar-icon:hover,
+    .sidebar-icon.active {
+    color: #000;
+    transform: scale(1.1);
+    }
+
+    /* Optional active color override (ensure NavLink is styled properly) */
+    .sidebar-icon.active svg {
+    color: #000;
+    }

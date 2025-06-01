@@ -1,0 +1,41 @@
+ClientLayout.client-layout {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: #f9f9f9;
+padding: 20px;
+font-family: Arial, sans-serif;
+}
+
+.top-circle {
+width: 50px;
+height: 50px;
+background-color: #9dc1e7; /* Blue color */
+color: white;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+cursor: pointer;
+user-select: none;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+transition: background-color 0.3s ease;
+position: relative;
+top: 4px;
+left: 4px;
+padding-bottom: 6px;
+}
+
+.top-circle:hover {
+background-color: #0056b3; /* Darker blue on hover */
+}
+
+.client-content {
+flex: 1; /* fill remaining space */
+background-color: white;
+border-radius: 8px;
+padding: 15px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+overflow-y: auto;
+}
