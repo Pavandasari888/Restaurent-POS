@@ -15,15 +15,21 @@
     };
 
     const getPriceFromItemString = (itemStr) => {
-    const match = itemStr.match(/^(\d+)\s+x\s+(.+)$/);
-    if (!match) return 0;
+  if (typeof itemStr !== 'string') {
+    console.warn("⚠️ Skipping invalid itemStr:", itemStr);
+    return 0;
+  }
 
-    const quantity = parseInt(match[1]);
-    const itemName = match[2].trim();
+  const match = itemStr.match(/^(\d+)\s+x\s+(.+)$/);
+  if (!match) return 0;
 
-    const price = priceMap[itemName] || 0;
-    return quantity * price;
-    };
+  const quantity = parseInt(match[1]);
+  const itemName = match[2].trim();
+
+  const price = priceMap[itemName] || 0;
+  return quantity * price;
+};
+
 
 
     router.post('/', (req, res) => {
