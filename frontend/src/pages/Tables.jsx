@@ -7,7 +7,7 @@
 
     // ✅ Fetch tables from backend
     useEffect(() => {
-        fetch("http://localhost:5000/api/tables")
+        fetch("https://restaurent-pos.onrender.com/api/tables")
         .then(res => res.json())
         .then(data => setTables(data))
         .catch(err => console.error("Failed to fetch tables", err));
@@ -18,7 +18,7 @@
         try {
         const nextNumber = tables.length > 0 ? Math.max(...tables.map(t => t.tableNumber)) + 1 : 1;
 
-        const res = await fetch("http://localhost:5000/api/tables", {
+        const res = await fetch("https://restaurent-pos.onrender.com/api/tables", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -41,7 +41,7 @@
     // ✅ Delete a table via DELETE
     const deleteTable = async (tableNumber) => {
         try {
-        const res = await fetch(`http://localhost:5000/api/tables/${tableNumber}`, {
+        const res = await fetch(`https://restaurent-pos.onrender.com/api/tables/${tableNumber}`, {
             method: "DELETE"
         });
         if (!res.ok) throw new Error("Failed to delete table");
