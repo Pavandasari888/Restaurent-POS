@@ -31,7 +31,7 @@
         status: "Processing"
         };
 
-        await fetch("http://localhost:5000/api/orders", {
+        await fetch("https://restaurent-pos.onrender.com/api/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(order),

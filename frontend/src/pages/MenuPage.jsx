@@ -24,7 +24,7 @@
         useEffect(() => {
         const fetchAllMeals = async () => {
             try {
-            const response = await fetch(`http://localhost:5000/api/menu/all`);
+            const response = await fetch(`https://restaurent-pos.onrender.com/api/menu/all`);
             const data = await response.json();
             setMeals(data);
             } catch (error) {
@@ -67,7 +67,7 @@
 
 
         try {
-            await fetch('http://localhost:5000/api/order', {
+            await fetch('https://restaurent-pos.onrender.com/api/order', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ items: selectedItems }),
