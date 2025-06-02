@@ -17,8 +17,8 @@ useEffect(() => {
 const fetchDashboardData = async () => {
     try {
     const [ordersRes, tablesRes, chefsRes] = await Promise.all([
-        fetch("https://restaurent-pos.onrender.com/analytics/orders-summary"),
-        fetch("https://restaurent-pos.onrender.com/tables"),
+        fetch("https://restaurent-pos.onrender.com/api/analytics/orders-summary"),
+        fetch("https://restaurent-pos.onrender.com/api/tables"),
         fetch("https://restaurent-pos.onrender.com/api/chefs")
     ]);
 
